@@ -1,8 +1,8 @@
-name: Update Playlist Every 10 minutes
+name: Update Playlist Every Day
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
