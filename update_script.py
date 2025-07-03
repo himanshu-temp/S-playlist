@@ -26,6 +26,52 @@ for group, channels in channel_groups.items():
     for name in channels:
         allowed_channels[name.lower()] = group
 
+# === Your custom EXTINF replacements ===
+custom_channel_data = {
+  "sony yay": {
+    "tvg-id": "",
+    "tvg-name": "Sony Yay",
+    "tvg-logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Yay_Hindi.png",
+    "display-name": "Sony Yay"
+  },
+  "sony max hd": {
+    "tvg-id": "",
+    "tvg-name": "Sony MAX HD",
+    "tvg-logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Max_HD.png",
+    "display-name": "Sony MAX HD"
+  },
+  "sony max": {
+    "tvg-id": "",
+    "tvg-name": "Sony MAX",
+    "tvg-logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/SET_MAX.png",
+    "display-name": "Sony MAX"
+  },
+  "sony sab hd": {
+    "tvg-id": "",
+    "tvg-name": "Sony SAB HD",
+    "tvg-logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_SAB_HD.png",
+    "display-name": "Sony SAB HD"
+  },
+  "set hd": {
+    "tvg-id": "",
+    "tvg-name": "SET HD",
+    "tvg-logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Sony_HD.png",
+    "display-name": "SET HD"
+  },
+  "sony pal": {
+    "tvg-id": "",
+    "tvg-name": "Sony Pal",
+    "tvg-logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png",
+    "display-name": "Sony Pal"
+  },
+  "sony bbc earth hd": {
+    "tvg-id": "",
+    "tvg-name": "Sony BBC Earth HD",
+    "tvg-logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_BBC_Earth_HD.png",
+    "display-name": "Sony BBC Earth HD"
+  }
+}
+
 # === Fetch playlist ===
 print(f"📥 Fetching playlist from: {SOURCE_URL}")
 try:
@@ -47,18 +93,31 @@ while i + 1 < len(lines):
         group = allowed_channels.get(channel_name.lower())
 
         if group:
-            # Inject or update group-title
-            if 'group-title="' in extinf:
-                updated_extinf = re.sub(r'group-title=".*?"', f'group-title="{group}"', extinf)
+            channel_key = channel_name.lower()
+            custom_info = custom_channel_data.get(channel_key)
+
+            if custom_info:
+                updated_extinf = (
+                    f'#EXTINF:-1 '
+                    f'tvg-id="{custom_info.get("tvg-id", "")}" '
+                    f'tvg-name="{custom_info.get("tvg-name", "")}" '
+                    f'tvg-logo="{custom_info.get("tvg-logo", "")}" '
+                    f'group-title="{group}",' 
+                    f'{custom_info.get("display-name", channel_name)}'
+                )
             else:
-                updated_extinf = extinf.replace(",", f' group-title="{group}",', 1)
+                # fallback: only update group-title
+                if 'group-title="' in extinf:
+                    updated_extinf = re.sub(r'group-title=".*?"', f'group-title="{group}"', extinf)
+                else:
+                    updated_extinf = extinf.replace(",", f' group-title="{group}",', 1)
 
             output_blocks.append(f"{updated_extinf}\n{url}")
         i += 2
     else:
         i += 1
 
-# === Write output
+# === Write output ===
 output_file = "Sony.m3u"
 if output_blocks:
     print(f"✅ Found {len(output_blocks)} categorized channels.")
