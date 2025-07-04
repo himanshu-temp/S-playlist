@@ -28,38 +28,38 @@ for group, channels in channel_groups.items():
 
 # === Your custom EXTINF replacements ===
 custom_channel_data = {
-  "sony yay": {
-    "tvg-id": "",
+    "sony yay": {
+    "tvg-id": "872",
     "tvg-name": "Sony Yay",
     "tvg-logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Yay_Hindi.png",
     "display-name": "Sony Yay"
   },
   "sony max hd": {
-    "tvg-id": "sonymaxhd.in",
+    "tvg-id": "476",
     "tvg-name": "Sony Max HD",
     "tvg-logo": "https://watchindia.net/images/channels/hindi/Sony_Max_HD.png",
     "display-name": "Sony MAX HD"
   },
   "sony max": {
-    "tvg-id": "",
+    "tvg-id": "289",
     "tvg-name": "Sony MAX",
     "tvg-logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/SET_MAX.png",
     "display-name": "Sony MAX"
   },
   "sony sab hd": {
-    "tvg-id": "sonysabhd.in",
+    "tvg-id": "471",
     "tvg-name": "Sony Sab HD",
     "tvg-logo": "https://watchindia.net/images/channels/hindi/Sony_Sab_HD.png",
     "display-name": "Sony SAB HD"
   },
   "set hd": {
-    "tvg-id": "sonyhd.in",
+    "tvg-id": "291",
     "tvg-name": "Sony TV HD",
     "tvg-logo": "https://watchindia.net/images/channels/hindi/Sony_TV_HD.png",
     "display-name": "SET HD"
   },
   "sony pal": {
-    "tvg-id": "",
+    "tvg-id": "474",
     "tvg-name": "Sony Pal",
     "tvg-logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png",
     "display-name": "Sony Pal"
