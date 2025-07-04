@@ -1,17 +1,17 @@
 #EXTM3U
 # Updated By Himanshu
 
-#EXTINF:-1 tvg-id="" tvg-name="Sony Yay" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Yay_Hindi.png" group-title="Kids",Sony Yay
+#EXTINF:-1 tvg-id="872" tvg-name="Sony Yay" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Yay_Hindi.png" group-title="Kids",Sony Yay
 https://tataplay.slivcdn.com/hls/live/2011746/SonyYaySD/master.m3u8
-#EXTINF:-1 tvg-id="sonymaxhd.in" tvg-name="Sony Max HD" tvg-logo="https://watchindia.net/images/channels/hindi/Sony_Max_HD.png" group-title="Movies",Sony MAX HD
+#EXTINF:-1 tvg-id="476" tvg-name="Sony Max HD" tvg-logo="https://watchindia.net/images/channels/hindi/Sony_Max_HD.png" group-title="Movies",Sony MAX HD
 https://tataplay.slivcdn.com/hls/live/2011670/SonyMaxhd/master.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="Sony MAX" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/SET_MAX.png" group-title="Movies",Sony MAX
+#EXTINF:-1 tvg-id="289" tvg-name="Sony MAX" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/SET_MAX.png" group-title="Movies",Sony MAX
 https://tataplay.slivcdn.com/hls/live/2011745/SonyMaxSD/master.m3u8
-#EXTINF:-1 tvg-id="sonysabhd.in" tvg-name="Sony Sab HD" tvg-logo="https://watchindia.net/images/channels/hindi/Sony_Sab_HD.png" group-title="Entertainment",Sony SAB HD
+#EXTINF:-1 tvg-id="471" tvg-name="Sony Sab HD" tvg-logo="https://watchindia.net/images/channels/hindi/Sony_Sab_HD.png" group-title="Entertainment",Sony SAB HD
 https://tataplay.slivcdn.com/hls/live/2011749/SABHD/master.m3u8
-#EXTINF:-1 tvg-id="sonyhd.in" tvg-name="Sony TV HD" tvg-logo="https://watchindia.net/images/channels/hindi/Sony_TV_HD.png" group-title="Entertainment",SET HD
+#EXTINF:-1 tvg-id="291" tvg-name="Sony TV HD" tvg-logo="https://watchindia.net/images/channels/hindi/Sony_TV_HD.png" group-title="Entertainment",SET HD
 https://tataplay.slivcdn.com/hls/live/2011671/SETHD/master.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="Sony Pal" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png" group-title="Entertainment",Sony Pal
+#EXTINF:-1 tvg-id="474" tvg-name="Sony Pal" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png" group-title="Entertainment",Sony Pal
 https://tataplay.slivcdn.com/hls/live/2011741/SonyPalSD/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="Sony BBC Earth HD" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_BBC_Earth_HD.png" group-title="Knowledge",Sony BBC Earth HD
 https://tataplay.slivcdn.com/hls/live/2011907/SonyBBCEarthHD/master.m3u8
