@@ -3,7 +3,6 @@ name: Update Playlist Every Day IST
 on:
   schedule:
      - cron: '0 */4 * * *'   # Every 4 hours
-     - cron: '30 18 * * *'  # Runs at 00:00 IST
   workflow_dispatch:
 
 jobs:
