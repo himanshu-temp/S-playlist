@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U url-tvg="https://raw.githubusercontent.com/Himanshu8221/ept-temp/refs/heads/main/tv_schedule.xml"
 # Updated By Himanshu
 
 #EXTINF:-1 tvg-id="sony_yay" tvg-name="Sony Yay" tvg-logo="http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Yay_Hindi.png" group-title="Kids",Sony Yay
