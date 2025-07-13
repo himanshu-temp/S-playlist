@@ -29,43 +29,43 @@ for group, channels in channel_groups.items():
 # === Your custom EXTINF replacements ===
 custom_channel_data = {
     "sony yay": {
-    "tvg-id": "872",
+    "tvg-id": "sony_yay",
     "tvg-name": "Sony Yay",
     "tvg-logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Yay_Hindi.png",
     "display-name": "Sony Yay"
   },
   "sony max hd": {
-    "tvg-id": "476",
+    "tvg-id": "sony_max_hd",
     "tvg-name": "Sony Max HD",
     "tvg-logo": "https://watchindia.net/images/channels/hindi/Sony_Max_HD.png",
     "display-name": "Sony MAX HD"
   },
   "sony max": {
-    "tvg-id": "289",
+    "tvg-id": "sony_max",
     "tvg-name": "Sony MAX",
     "tvg-logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/SET_MAX.png",
     "display-name": "Sony MAX"
   },
   "sony sab hd": {
-    "tvg-id": "471",
+    "tvg-id": "sony_sab_hd",
     "tvg-name": "Sony Sab HD",
     "tvg-logo": "https://watchindia.net/images/channels/hindi/Sony_Sab_HD.png",
     "display-name": "Sony SAB HD"
   },
   "set hd": {
-    "tvg-id": "291",
+    "tvg-id": "set_hd",
     "tvg-name": "Sony TV HD",
     "tvg-logo": "https://watchindia.net/images/channels/hindi/Sony_TV_HD.png",
     "display-name": "SET HD"
   },
   "sony pal": {
-    "tvg-id": "474",
+    "tvg-id": "sony_pal",
     "tvg-name": "Sony Pal",
     "tvg-logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_Pal.png",
     "display-name": "Sony Pal"
   },
   "sony bbc earth hd": {
-    "tvg-id": "",
+    "tvg-id": "sony_bbc_earth_hd",
     "tvg-name": "Sony BBC Earth HD",
     "tvg-logo": "http://jiotv.catchup.cdn.jio.com/dare_images/images/Sony_BBC_Earth_HD.png",
     "display-name": "Sony BBC Earth HD"
